@@ -6,11 +6,13 @@
     <title>Acceso de usuarios</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300%7CSonsie+One" 
     rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Style.css"> <!--Declaramos que archivo css va a usar-->
 </head>
 <body>
     <h3>Acceso de usuario</h3>
     <form action="" id="usuario"> 
+
+        <!--Declaramos los inputs donde el usuario pondra sus datos-->
 
         <h5>Usuario</h5>
         <input type="text"  id="usuarios" onclick="" required>
@@ -20,6 +22,9 @@
         <button type="submit" value="Confirmar" onclick="verificar()">verificar</button>
 
     </form>
+
+    <!--Usamos el script para usar codigo del lenguaje java script-->
+    
     <script>
         let control = 0;
         let contraseña = "pass"
@@ -27,6 +32,9 @@
         function verificar(){
             let clave = document.getElementById("clave").value;
             if (clave != contraseña){
+
+            //Declaramos que pasa si la contraseña es correcta o incorrecta
+                
             alert("La contraseña es incorrecta")
             }
             else{
